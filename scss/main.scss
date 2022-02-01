@@ -2,6 +2,8 @@ main{
     height: 595px;
     background: url(../img/christoffer-engstrom-503481-unsplash.png);
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: $white-FF;
     position: relative;
     &::before{
