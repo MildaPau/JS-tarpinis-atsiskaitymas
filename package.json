@@ -14,5 +14,13 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MildaPau/JS-tarpinis-atsiskaitymas.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MildaPau/JS-tarpinis-atsiskaitymas/issues"
+  },
+  "homepage": "https://github.com/MildaPau/JS-tarpinis-atsiskaitymas#readme",
   "description": ""
 }
