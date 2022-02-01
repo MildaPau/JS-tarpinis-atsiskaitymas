@@ -1,5 +1,4 @@
 #chechire-country{
-    // height: 596px;
     background-color: $black-1C;
     .container{
         @include container-width;
@@ -31,9 +30,7 @@
                 display: flex;
                 margin-bottom: 36px;
                 .div-round{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    @include display-flex-center;
                     width: 50px;
                     height: 50px;
                     border-radius: 100%;
