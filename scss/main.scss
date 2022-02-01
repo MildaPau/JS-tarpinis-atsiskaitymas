@@ -1,0 +1,119 @@
+main{
+    height: 595px;
+    background: url(../img/christoffer-engstrom-503481-unsplash.png);
+    background-position: center;
+    color: $white-FF;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 595px;
+        background: transparent linear-gradient(270deg, #6696E2 0%, #E27866 100%) 0% 0% no-repeat padding-box;
+        opacity: 0.42;
+    }
+    .container{
+        display: flex;
+        @include container-width;
+
+        .squares{
+            z-index: 1;
+            margin-top: 127px;
+            display: grid;
+            grid-template-columns: 100px ;
+            grid-template-rows: 100px 100px 100px;
+            grid-row-gap: 21px;
+
+            div{
+                img{
+                    width: 100px;
+                    height: 100px;
+                }
+                p{
+                    // width: 64px;
+                    // height: 64px;
+                    font-size: 14px;
+                    transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
+                    position: relative;
+                    top: -80px;
+                    left: 15px;
+                    
+                }
+                .register{
+                        top: -75px;
+                        left: 10px;
+                    }
+            }
+        }
+        .text{
+            z-index: 1;
+            margin: 150px 70px 0 54px;
+            h2{
+                font-size: 36px;
+                line-height: 40px;
+                margin-bottom: 33px;
+            }
+            p{
+                font-size: 14px;
+                line-height: 20px;
+                margin-bottom: 25px;
+            }
+        }
+        .gellary{
+            z-index: 1;
+            margin-top: 114px;
+            // height: 400px;
+            display: grid;
+            grid-template-columns: 168px 168px;
+            grid-template-rows: 168px;
+            grid-column-gap: 26px;
+            grid-row-gap: 20px;
+
+            .overlay{
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                background: url(../img/photo-1493409137604-0901c55e4456.png);
+                background-size: 200px;
+                background-position: center;
+                position: relative;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 168px;
+                    background: $light-red;
+                    opacity: 0.8;
+                    z-index: 2;
+                }
+                p{
+                    z-index: 2;
+                    font-size: 20px;
+                    line-height: 24px;
+                    margin-top: 40px;
+                    img{
+                        display: block;
+                        margin: 0 auto;
+                        margin-top: 18px;
+                    }
+                }
+            }
+
+            .img-2{
+                    background: url(../img/photo-1543364195-bfe6e4932397.png);
+                    background-size: 200px;
+                    background-position: center;
+            }
+            .img-3{
+                    background: url(../img/photo-1448387473223-5c37445527e7.png);
+                    background-position: center;
+                    grid-column: 1/3;
+            }
+            
+        }
+    }
+}

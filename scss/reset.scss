@@ -1,0 +1,37 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    font-family: Montserrat;
+}
+
+#why-this-is-awesom{
+    .container{
+        article{
+            display: flex;
+        }
+    }
+}
+#pricing-options{
+    .container{
+        .plans{
+            display: flex;
+        }
+    }
+}
+
+#what-our-costumers-ar-saying{
+    .container{
+        article{
+            display: flex;
+        }
+    }
+}
+
+footer{
+    .container{
+            display: flex;
+    }
+}

@@ -1,0 +1,27 @@
+nav{
+    background-color: $black-1C;
+    position: sticky;
+    top: 0%;
+    z-index: 2;
+    
+    .container{
+        @include container-width;
+        height: 72px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+
+        .links{
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+            
+            a{
+                color: $white-FF;
+                font-size: 14px;
+                text-decoration: none;
+            }
+        }
+    }
+}
