@@ -18,6 +18,7 @@ main{
     }
     .container{
         display: flex;
+        justify-content: center;
         @include container-width;
 
         .squares{
@@ -29,38 +30,43 @@ main{
             grid-row-gap: 21px;
 
             div{
-                img{
+                .square-img{
                     width: 100px;
                     height: 100px;
-                }
-                p{
+                    background-color: #A37169;
+                    @include display-flex-center;
+                    box-shadow: 0px 0px 10px $grey-lighter;
+                    transition: 0.5s;
+                    &:hover{
+                    background-color: $light-red;
+                    }
+                    p{
                     font-size: 14px;
                     transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
-                    position: relative;
-                    top: -80px;
-                    left: 15px;
-                    
-                }
-                .register{
-                        top: -75px;
-                        left: 10px;
+                    cursor: pointer;
                     }
+                }
             }
         }
-        .text{
-            z-index: 1;
-            margin: 150px 70px 0 54px;
-            h2{
-                font-size: 36px;
-                line-height: 40px;
-                margin-bottom: 33px;
-            }
-            p{
-                font-size: 14px;
-                line-height: 20px;
-                margin-bottom: 25px;
-            }
-        }
+                .tab-text{
+                    display: none;
+                    opacity: 0;
+                    // animation: Animation 1s;
+                    z-index: 1;
+                    margin: 150px 70px 0 54px;
+                    transition: opacity 1s;
+                    h2{
+                        font-size: 36px;
+                        line-height: 40px;
+                        margin-bottom: 33px;
+                    }
+                    p{
+                        font-size: 14px;
+                        line-height: 20px;
+                        margin-bottom: 25px;
+                    }
+                }
+        
         .gellary{
             z-index: 1;
             margin-top: 114px;
@@ -69,48 +75,31 @@ main{
             grid-template-rows: 168px;
             grid-column-gap: 26px;
             grid-row-gap: 20px;
+            padding-left: 100px;
 
-            .overlay{
-                display: grid;
-                justify-content: center;
-                align-items: center;
-                background: url(../img/photo-1493409137604-0901c55e4456.png);
-                background-size: 200px;
-                background-position: center;
-                position: relative;
-                &::before{
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 168px;
-                    background: $light-red;
-                    opacity: 0.8;
-                    z-index: 2;
-                }
-                p{
-                    z-index: 2;
-                    font-size: 20px;
-                    line-height: 24px;
-                    margin-top: 40px;
-                    img{
-                        display: block;
-                        margin: 0 auto;
-                        margin-top: 18px;
-                    }
-                }
+            .img-1{
+                    background: url(../img/photo-1493409137604-0901c55e4456.png);
+                    background-size: 200px;
+                    background-position: center;
+                    position: relative;
+                    transition: 1s;
+                    @include overlay-explore;
             }
-
             .img-2{
                     background: url(../img/photo-1543364195-bfe6e4932397.png);
                     background-size: 200px;
                     background-position: center;
+                    position: relative;
+                    @include overlay-explore;
             }
             .img-3{
                     background: url(../img/photo-1448387473223-5c37445527e7.png);
+                    background-size: 500px;
                     background-position: center;
+                    background-repeat: no-repeat;
                     grid-column: 1/3;
+                    position: relative;
+                    @include overlay-explore;
             }
             
         }

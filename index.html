@@ -104,39 +104,65 @@
 
     <main>
       <div class="container">
-        <article class="squares">
-          <div>
-            <img src="app/img/tab_1_button_u83_selected.svg" alt="square-1">
-            <p class="register">REGISTER</p>
-          </div>
-          <div>
-            <img src="app/img/tab_2_button_u85_mouseover.png" alt="square-2">
-            <p>APPLAY</p>
-          </div>
-          <div>
-            <img src="app/img/tab_2_button_u85_mouseover.png" alt="square-3">
-            <p>RECEIVE</p>
-          </div>
-        </article>
-
-        <article class="text">
-          <h2>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet
-          lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis
-          parturient montes.
-          </p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
-          </p> 
+        
+            <article class="squares">
+              <div class="tab">
+                <div class="square-img">
+                  <p id="click" onclick="changeContent(0, 'pirmas')">REGISTER</p>
+                </div>
+              </div>
+            
+              <div class="tab">
+                <div class="square-img">
+                  <p id="click" onclick="changeContent(1, 'antras')">APPLAY</p>
+                </div>
+              </div>
+            
+              <div class="tab">
+                <div class="square-img">
+                  <p id="click" onclick="changeContent(2, 'trecias')">RECEIVE</p>
+                </div>
+              </div>
+            </article>
+            
+            <article id="pirmas" class="tab-text articles">
+                <h2>1-Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                  amet
+                  lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis
+                  parturient montes.
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                </p>
+              
+            </article>
           
-        </article>
+            <article id="antras" class="tab-text articles">
+                <h2>2-Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                  amet
+                  lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis
+                  parturient montes.
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                </p>
+
+            </article>
+
+            <article id="trecias" class="tab-text articles">
+              <h2>3-Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                amet
+                lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis
+                parturient montes.
+              </p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+              </p>
+            
+            </article>
 
         <article class="gellary">
-          <div class="overlay">
-            <p>EXPLORE
-              <img src="app/img/description-cursor-icon-with-shadow-32.png" alt="cursor">
-            </p>
-          </div>
-
+          <div class="img-1"></div>
           <div class="img-2"></div>
           <div class="img-3"></div>
         </article>
