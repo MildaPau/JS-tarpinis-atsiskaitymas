@@ -1,1 +1,6 @@
-// alert("Veikia");
+"use strict";
+
+
+
+
+
