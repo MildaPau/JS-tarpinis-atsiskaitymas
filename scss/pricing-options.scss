@@ -1,0 +1,75 @@
+#pricing-options{
+    background-color: $blue;
+    color: $white-FF;
+    text-align: center;
+    padding: 97px 0 108px 0;
+    .container{
+        @include container-width;
+        h2{
+            @include h2;
+        }
+        .img-line{
+            margin: 21px 0 27px 0;
+        }
+        .p-center{
+            @include p-size-heigth-small;
+            margin-bottom: 83px;
+        }
+        .plans{
+            display: flex;
+            align-items: end;
+            .plan{
+                max-width: 343px;
+                .pricing-header{
+                    background-color: $black-33;
+                    border-radius: 5px 5px 0px 0px;
+                    h5{
+                    @include p-size-heigth-small-2;
+                    font-weight: 400;
+                    padding: 14px 0 21px 0;
+                    border-radius: 5px 5px 0px 0px;
+                    }
+                    h2{
+                        font-size: 94px;
+                        line-height: 52px;
+                        font-weight: 400;
+                        span{
+                            font-size: 42px;
+                        }
+                    }
+                    p{
+                        @include p-size-heigth-small-2;
+                        padding: 14px 0 19px 0;
+                    }
+                    .long-line{
+                        height: 6px;
+                        background-color: $green;
+                    }
+                    .p-with-green-line{
+                        @include p-size-heigth-small-2;
+                        padding: 10px 0 12px 0;
+                        background-color: $green;
+                    }
+
+                }
+                &:nth-of-type(2){
+                    margin: 0 40px;
+                }
+
+                ul{
+                    background-color: $white-FF;
+                    border-radius: 0px 0px 5px 5px;
+                    padding: 0 68px;
+                    li{
+                        @include p-size-heigth-small-2;
+                        color: $grey-dark;
+                        text-transform: uppercase;
+                        padding: 11px 0;
+                        list-style-type: none;
+                    }
+                }
+            }
+        }
+    }
+}
+

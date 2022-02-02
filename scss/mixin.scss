@@ -8,3 +8,16 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin h2 {
+    font-size: 36px;
+    line-height: 43px;
+}
+@mixin p-size-heigth-small {
+    font-size: 14px;
+    line-height: 20px;
+}
+@mixin p-size-heigth-small-2 {
+    font-size: 14px;
+    line-height: 24px;
+}

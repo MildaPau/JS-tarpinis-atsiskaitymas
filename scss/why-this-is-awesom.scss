@@ -5,16 +5,14 @@
         padding-top: 99px;
         padding-bottom: 122px;
         h2{
-            font-size: 36px;
-            line-height: 43px;
+            @include h2;
             color: $black-21;
         }
         .img-line{
             margin: 21px 0 27px 0;
         }
-        p{
-            font-size: 14px;
-            line-height: 20px;
+        .p-center{
+            @include p-size-heigth-small;
             margin-bottom: 65px;
         }
         article{
@@ -39,8 +37,7 @@
                     margin: 35px 0 27px 0;
                 }
                 p{
-                    font-size: 14px;
-                    line-height: 20px;
+                    @include p-size-heigth-small;
                     color: $grey-dark;
                 }
                 &:nth-of-type(2){
