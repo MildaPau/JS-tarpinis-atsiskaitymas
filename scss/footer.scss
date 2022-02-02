@@ -1,0 +1,31 @@
+footer{
+    background-color: $black-1C;
+    .container{
+        @include container-width;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 52px 0 51px 0;
+
+        .socials-icons{
+            @include icons;
+            a{
+                img{
+                    height: 20px;
+                    opacity: 1 !important;
+                }
+            &:last-of-type{
+                @include wifi-icon;
+            }
+            }
+        }
+        .copy-right{
+            p{
+                color: $white-FF;
+                font-size: 18px;
+                line-height: 14.4px;
+                opacity: 0.5;
+            }
+        }
+    }
+}

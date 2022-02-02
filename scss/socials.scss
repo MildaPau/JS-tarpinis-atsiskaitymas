@@ -22,18 +22,13 @@
             }
         }
         .socials-icons{
-            width: 600px;
-            display: flex;
-            justify-content: space-between;
+            @include icons;
             a{
                 img{
                     height: 30px;
                 }
             &:last-of-type{
-                opacity: 0.65;
-                transform: rotate(45deg);
-                position: relative;
-                top: 4px;
+                @include wifi-icon;
             }
             }
         }

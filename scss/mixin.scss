@@ -49,3 +49,16 @@
     position: relative;
     top: -3px;
 }
+
+@mixin icons {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin wifi-icon {
+    opacity: 0.65;
+    transform: rotate(45deg);
+    position: relative;
+    top: 4px;
+}
