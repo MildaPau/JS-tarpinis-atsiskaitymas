@@ -1,0 +1,55 @@
+#costumers-saying{
+    
+    .container{
+        @include container-width;
+        text-align: center;
+        padding: 67px 0 153px 0;
+        h2{
+            @include h2;
+            color: $black-1C;
+        }
+        .img-line{
+            margin: 31px 0 58px 0;
+        }
+
+        article{
+            display: flex;
+            align-items: end;
+            .messages{
+                max-width: 273px;
+                
+                .p-message{
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: $white-FF;
+                    background-color: $blue;
+                    margin-bottom: 19px;
+                    padding: 20px;
+                    border-radius: 8px;
+                }
+                &:nth-of-type(2){
+                    padding: 0 119px;
+                }
+                .person{
+                    display: flex;
+                    align-items: center;
+                    img{
+                        padding-right: 17px;
+                    }
+                    .name{
+                        text-align: left;
+                        h4{
+                            @include p-size-heigth-small-2;
+                            font-weight: 400;
+                        }
+                        p{
+                            font-size: 14px;
+                            line-height: 16.8px;
+                            color: $grey-dark;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
