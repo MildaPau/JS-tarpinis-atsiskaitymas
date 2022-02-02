@@ -339,20 +339,25 @@
 
     <section id="contact-us">
       <div class="container">
+        <h2>CONTACT US</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
         <form action="#">
-          <input type="text" id="fname" name="fname" placeholder="First name"><br>
+          <input class="text-input" type="text" id="fname" name="fname" placeholder="First name"><br>
 
-          <input type="text" id="lname" name="lname" placeholder="Last name"><br>
+          <input class="text-input" type="text" id="lname" name="lname" placeholder="Last name"><br>
 
-          <input type="text" id="lname" name="lname" placeholder="Phone number"><br>
+          <input class="text-input" type="text" id="lname" name="lname" placeholder="Phone number"><br>
           
-          <input type="radio" id="personal" name="type" value="personal" checked>
-          <label for="contactChoice1">PERSONAL</label>
+          <!-- radio -->
+          <input class="radio-input" type="radio" id="personal" name="type" value="personal" checked>
+          <label class="radio-label" for="contactChoice1">PERSONAL</label>
           
-          <input type="radio" id="company" name="type" value="company">
-          <label for="contactChoice2">company</label>
-          <input type="submit" value="SEND">
+          <input class="radio-input" type="radio" id="company" name="type" value="company">
+          <label class="radio-label" for="contactChoice2">company</label>
+
+          <button>SEND</button>
+          <!-- <input type="submit" value="SEND"> -->
           </form>
         </form>
       </div>
