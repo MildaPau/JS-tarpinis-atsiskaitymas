@@ -65,12 +65,10 @@
 }
 
 // swiper css
-.swiper {
+#costumers-saying .swiper {
   max-width: 100%;
   text-align: -webkit-center;
-}
-
-.swiper-wrapper{
+  .swiper-wrapper{
     display: flex;
     align-items: flex-end;
 }
@@ -105,3 +103,5 @@
         display: none;
     }
 }
+}
+
