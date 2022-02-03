@@ -1,8 +1,35 @@
 "use strict";
 
+// responsive nav bar
+var burger = document.getElementById("burger");
+var anchors = document.querySelectorAll(".nav-a");
+
+
+burger.addEventListener("click", function(){
+    for(var x of anchors){
+    x.classList.toggle("block");
+    console.log(x);
+};
+    this.classList.toggle("rotateZ");
+})
+
+
+
+// for (var x of anchors){
+//     x.addEventListener("click", function(){
+//         // this.style.color = "red";
+//         for(var i = 0; i < anchors.length; i++){
+//             anchors[i].style.color = "white";
+//         }
+//         this.style.color = "red";
+//     });
+// }
+
+
+
+
+
 // tabs
-
-
 function changeContent(index, id){
     document.querySelector(".gellary").style.paddingLeft = "0";
     var articles = document.querySelectorAll('.articles');

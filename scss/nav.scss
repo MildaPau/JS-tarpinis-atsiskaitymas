@@ -1,27 +1,139 @@
-nav{
+#navigation{
     background-color: $black-1C;
-    position: sticky;
-    top: 0%;
-    z-index: 2;
+    .container-nav{
+    @include container-width;
     
-    .container{
-        @include container-width;
-        height: 72px;
+    nav{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        line-height: 50px;
+        position: sticky;
+        top: 0%;
+        z-index: 2;
         
-
-        .links{
-            width: 40%;
-            display: flex;
-            justify-content: space-between;
-            
+            .nav-log{
+                width: 800px;
+                display: flex;
+                // justify-content: start;
+                padding: 10px 0;
+            }
             a{
                 color: $white-FF;
                 font-size: 14px;
                 text-decoration: none;
+                padding: 0 20px;
+                // &:hover{
+                //     color: $light-red;
+                // }
+                &:last-of-type{
+                    display: none;
+                    font-size: 30px;
+                    transition: transform 0.8s;
+                }
+                
             }
+                .nav-a-hover{
+                    position: relative;
+                }
+                .nav-a-hover::before{
+                    // color: $light-red;
+                    position: absolute;
+                    content: "";
+                    width: 2px;
+                    height: 100%;
+                    background: $light-red;
+                    transition: 0.3s;
+                }
+                .nav-a-hover:hover{
+                    color: white;
+                    z-index: 2;
+                }
+                .nav-a-hover:hover::before {
+                    width: 100%;
+                    height: 100%;
+                    right: 0px;
+                    background: $light-red;
+                    color: white;
+                }
+    }
+}
+}
+
+.nav-a-hover:hover{
+    color: $light-red;
+}
+
+a:hover {
+  color: orange;
+}
+
+.link {
+  position: relative;
+}
+
+.link::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 100%;
+  height: 3px;
+  background: grey;
+  transition: 0.3s;
+}
+
+.link:hover::before {
+  top: 10px;
+  background: orange;
+}
+
+.link::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: grey;
+  transition: 0.3s;
+}
+
+.link:hover::after {
+  bottom: 10px;
+  background: orange;
+}
+
+
+@media (max-width: 760px){
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-log{
+        width: 100%;
+        justify-content: center;
+        padding-top: 30px !important;
+    }
+    a{
+        display: none;
+        &:last-of-type{
+            order: 1;
+            justify-content: flex-start;
+            display: block !important;
+            padding: 25px 0 !important;
         }
     }
 }
+
+
+.rotateZ{
+    transform: rotateZ(-180deg);
+}
+.block{
+    display: block;
+}
+.selected {
+  color: orange;
+}
+
+
