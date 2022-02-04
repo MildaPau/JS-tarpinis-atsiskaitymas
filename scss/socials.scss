@@ -2,7 +2,7 @@
 
     box-shadow: 0px 1px 3px $grey-lighter;
     
-    .container{
+    .container-socials{
         @include container-width;
         display: flex;
         align-items: center;
@@ -34,3 +34,30 @@
         }
     }
 }
+
+@media(max-width: 1150px){
+    #socials{
+        .container-socials{
+            // display: flex;
+            max-width: 850px;
+            .socials-icons{
+                width: 400px;
+                padding: 0 30px;
+            }
+        }
+    }
+    
+}
+// @media(max-width: 678px){
+//     #socials{
+//         // .container-socials{
+//         //     display: flex;
+//         //     flex-direction: column;
+//             // .socials-icons{
+//             //     width: 400px;
+//             //     padding: 0 30px;
+//             // }
+//         // }
+//     }
+    
+// }
