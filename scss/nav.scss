@@ -1,63 +1,63 @@
 #navigation{
     background-color: $black-1C;
     .container-nav{
-    @include container-width;
-    
-    nav{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        line-height: 50px;
-        position: sticky;
-        top: 0%;
-        z-index: 2;
+        @include container-width;
         
-            .nav-log{
-                width: 800px;
-                display: flex;
-                // justify-content: start;
-                padding: 10px 0;
-            }
-            a{
-                color: $white-FF;
-                font-size: 14px;
-                text-decoration: none;
-                padding: 0 20px;
-                // &:hover{
-                //     color: $light-red;
-                // }
-                &:last-of-type{
-                    display: none;
-                    font-size: 30px;
-                    transition: transform 0.8s;
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            line-height: 45px;
+            position: sticky;
+            top: 0%;
+            z-index: 2;
+            
+                .nav-log{
+                    width: 800px;
+                    display: flex;
+                    // justify-content: start;
+                    padding: 10px 0;
                 }
-                
-            }
-                .nav-a-hover{
+                a{
+                    color: $white-FF;
+                    font-size: 14px;
+                    text-decoration: none;
+                    padding: 0 20px;
+                    margin: 5px;
                     position: relative;
-                }
-                .nav-a-hover::before{
-                    // color: $light-red;
-                    position: absolute;
-                    content: "";
-                    width: 2px;
-                    height: 100%;
-                    background: $light-red;
-                    transition: 0.3s;
+                    overflow: hidden;
+                    transition-delay: 0.3s;
+                    &:last-of-type{
+                        display: none;
+                        font-size: 30px;
+                        transition: transform 0.8s;
+                        &:last-of-type:hover{
+                            color: $light-red;
+                        }
+                    }
                 }
                 .nav-a-hover:hover{
-                    color: white;
-                    z-index: 2;
+                    color: $light-red;
+                    font-weight: 600;
+                    transition-delay: 0.2s;
                 }
-                .nav-a-hover:hover::before {
-                    width: 100%;
-                    height: 100%;
-                    right: 0px;
-                    background: $light-red;
-                    color: white;
-                }
+                    .nav-a-hover::before{
+                        position: absolute;
+                        transform: translateX(-135%);
+                        content: "";
+                        width: 100%;
+                        height: 100%;
+                        background: $light-red;
+                        opacity: 0.8;
+                        transition: 0.7s;
+                        
+                    }
+                    .nav-a-hover:hover::before{
+                        opacity: 0.8;
+                        transform: translatex(101%);
+                    }
+        }
     }
-}
 }
 
 .nav-a-hover:hover{
