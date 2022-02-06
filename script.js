@@ -7,11 +7,7 @@ var aHovers = document.querySelectorAll(".nav-a-hover");
 var navLogo = document.querySelector(".nav-log");
 var navLogoImg = document.querySelector(".nav-log-img");
 
-// anchors.style.display = "none";
-
 burger.addEventListener("click", function(){
-    // navLogo.style.display = "none";
-    // navLogoImg.style.display = "none";
     for(var x of anchors){
     x.classList.toggle("block");
     console.log(x);
@@ -20,9 +16,6 @@ burger.addEventListener("click", function(){
     
     
 })
-
-
-
 
 for (var x of anchors){
     x.addEventListener("click", function(){
@@ -37,10 +30,8 @@ for (var x of anchors){
         this.style.fontWeight = "800";
         this.style.fontSize = "20";
     });
-    // anchors[5].addEventListener("click", function(){
-    // anchors.style.color = "#FFFFFF";
-    // })
 }
+
 
 
 // tabs
@@ -61,6 +52,7 @@ function changeContent(index, id){
     tabs[index].style.backgroundColor = "#E27866";
 
 
+   
 }
 
     // var article = document.getElementById('#pirmas');
