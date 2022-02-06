@@ -27,7 +27,9 @@
             }
 
             .title{
-                display: flex;
+                // display: flex;
+                display: grid;
+                grid-template-columns: 50px auto;
                 margin-bottom: 36px;
                 .div-round{
                     @include display-flex-center;
@@ -44,6 +46,7 @@
                     margin-left: 20px;
                     
                     .p-title{
+                            max-width: 350px;
                         font-size: 14px;
                         line-height: 17px;
                         margin-bottom: 6px;
@@ -57,3 +60,51 @@
         }
     }
 }
+
+// @media (max-width: 1150px){
+//     #chechire-country{
+
+//         .container{
+//             max-width: 850px;
+            
+//             .logo{
+//                 img{
+//                     height: 150px;
+//                     margin: 213px 50px 0 0px;
+//                 }
+//             }
+//         }
+//     }
+// }
+// @media (max-width: 900px){
+//     #chechire-country{
+//         .container{
+//             padding: 0 50px;
+//         }
+//     }
+// }
+
+// @media (max-width: 768px){
+//     #chechire-country{
+//         .container{
+//             flex-direction: column;
+//             .logo{
+//                 img{
+//                     margin: 50px auto 0;
+//                     display: block;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 425px){
+//     #chechire-country{
+//         .container{
+//             .text{
+//                align-items: center;
+//             }     
+//         }
+//     }
+// }
+    
