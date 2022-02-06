@@ -4,10 +4,7 @@
     
     .container-socials{
         @include container-width;
-        // display: flex;
             align-items: center;
-        // justify-content: space-between;
-        // flex-wrap: wrap;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -29,9 +26,10 @@
             @include icons;
             list-style-type: none;
             li{
-                img{
+                    img{
                     height: 30px;
                 }
+                
             &:last-of-type{
                 @include wifi-icon;
             }
