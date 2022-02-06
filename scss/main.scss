@@ -16,7 +16,7 @@ main{
         background: transparent linear-gradient(270deg, #6696E2 0%, #E27866 100%) 0% 0% no-repeat padding-box;
         opacity: 0.42;
     }
-    .container{
+    .container-main{
         display: flex;
         justify-content: center;
         @include container-width;
@@ -69,10 +69,10 @@ main{
         
         .gellary{
             z-index: 1;
-            margin-top: 114px;
+            margin-top: 127px;
             display: grid;
             grid-template-columns: 168px 168px;
-            grid-template-rows: 168px;
+            grid-template-rows: repeat(2, 168px);
             grid-column-gap: 26px;
             grid-row-gap: 20px;
             padding-left: 100px;
@@ -105,3 +105,61 @@ main{
         }
     }
 }
+
+@media(max-width: 1100px){
+    main{
+        .container-main{
+            max-width: 850px;
+            .gellary{
+                grid-template-columns: 120px 120px;
+                grid-template-rows: repeat(2, 120px);
+            }
+        }
+    }
+}
+// @media(max-width: 900px){
+//     main{
+//         .container-main{
+//             flex-direction: column;
+//             .squares{
+//                 // grid-template-columns: minmax(50px, 100px) minmax(50px, 100px) minmax(50px, 100px);
+//                 grid-template-columns: 100px 100px 100px ;
+//                 grid-template-rows: auto;
+//                 grid-column-gap: 21px;
+//                 justify-content: center;
+//             }
+//             .tab-text{
+//                 margin-top: 50px;
+//                 text-align: center;
+//             }
+//             .gellary{
+//                 margin-top: 0;
+//                 grid-template-columns: minmax(80px, 120px) minmax(80px, 120px) minmax(160px, 240px) ;
+//                 grid-template-rows: 100px;
+//                 grid-column-gap: 21px;
+//                 justify-content: center;
+//                 margin-top: 50px;
+//                 padding-left: 0;
+//                 .img-3{
+//                     grid-column: 3;
+//                 }
+//             }
+//         }
+//     }
+// }
+// @media(max-width: 450px){
+//     main{
+//         .container-main{
+//             .tab-text{
+//                 margin-bottom: 0;
+//             }
+//             .gellary{
+//                 grid-template-columns: 120px 120px;
+//                 grid-template-rows: repeat(2, 120px);
+//                 .img-3{
+//                     grid-column: 1/3;
+//                 }
+//             }
+//         }
+//     }
+// }
