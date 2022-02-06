@@ -106,14 +106,4 @@ main{
     }
 }
 
-@media(max-width: 1100px){
-    main{
-        .container-main{
-            max-width: 850px;
-            .gellary{
-                grid-template-columns: 120px 120px;
-                grid-template-rows: repeat(2, 120px);
-            }
-        }
-    }
-}
+
