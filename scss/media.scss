@@ -205,3 +205,17 @@
         }
     }
 }
+
+
+// contact-us
+@media (max-width: 500px){
+    #contact-us{
+        .container{
+            padding-left: 30px;
+            padding-right: 30px;
+            form{
+                max-width: 200px;
+            }
+        }
+    }
+}
