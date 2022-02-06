@@ -54,3 +54,30 @@ function changeContent(index, id){
 
    
 }
+
+
+// hero-area
+var number = document.getElementById("number");
+var button = document.getElementById("get-started");
+
+button.addEventListener("click", function(){
+    if(typeof number.value != number && 
+        parseInt(number.value.length) !== 9 ){
+        alert("Klaida. Netinkamas telefono numeris..");
+    }
+    
+})
+
+// contact us
+var number2 = document.getElementById("number2");
+var button2 = document.getElementById("send");
+
+button2.addEventListener("click", function(){
+    if(typeof number2.value != number && 
+        parseInt(number2.value.length) !== 9 ){
+        alert("Klaida. Netinkamas telefono numeris..");
+    }
+    
+})
+
+
