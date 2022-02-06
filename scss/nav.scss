@@ -68,40 +68,6 @@
     color: $light-red;
 }
 
-// @media (max-width: 1150px){
-//     .container-nav{
-//         nav {
-//             max-width: 850px;
-//             margin: 0 auto;
-//             padding: 0 20px;
-//             .nav-log{
-//                 width: 400px !important;
-//             }
-//         }
-//     } 
-// }
-// @media (max-width: 768px){
-//     nav{
-//         flex-direction: column;
-//         align-items: center;
-//     }
-//     .nav-log{
-//         width: 100%;
-//         justify-content: center;
-//         padding-top: 30px !important;
-//     }
-//     a{
-//         display: none;
-//         &:last-of-type{
-//             order: 1;
-//             justify-content: flex-start;
-//             display: block !important;
-//             padding: 25px 0 !important;
-//         }
-//     }
-// }
-
-
 .rotateZ{
     transform: rotateZ(-180deg);
 }
