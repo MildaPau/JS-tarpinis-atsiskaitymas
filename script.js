@@ -5,13 +5,19 @@ var burger = document.getElementById("burger");
 var anchors = document.querySelectorAll(".nav-a");
 var aHovers = document.querySelectorAll(".nav-a-hover");
 
+// anchors.style.display = "none";
+
 burger.addEventListener("click", function(){
     for(var x of anchors){
     x.classList.toggle("block");
+    // x.style.display = "block";
     console.log(x);
 };
     this.classList.toggle("rotateZ");
+    
+    
 })
+
 
 
 

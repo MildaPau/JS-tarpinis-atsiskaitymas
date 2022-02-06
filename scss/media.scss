@@ -37,10 +37,6 @@
     #hero-area{
         .container{
             max-width: 850px;
-            .text{
-                width: 440px ;
-                padding-right: 40px;
-            }
             .right-side{
                 padding-left: 0;
             }
@@ -73,3 +69,40 @@
 }
 
 //socials
+@media(max-width: 1150px){
+    #socials{
+        .container-socials{
+           max-width: 850px;
+            .socials-icons{
+                width: 400px;
+                cursor: pointer;
+            }
+        }
+    }
+    
+}
+@media (max-width: 900px){
+    #socials{
+        padding: 50px;
+        .container-socials{
+                justify-content: center;
+                text-align: center;
+                }
+                .socials-icons{
+                    padding-top: 40px;
+                }
+                
+    }
+}
+
+@media(max-width: 678px){
+    .secial-text{
+        h3{
+            margin-bottom: 10px;
+        }
+    }
+    .socials-icons{
+        width: 300px;   
+    }
+    
+}

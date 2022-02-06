@@ -19,7 +19,10 @@
                     // justify-content: start;
                     padding: 10px 0;
                 }
-                a{
+                ul{
+                    display: flex;
+                }
+                .nav-a{
                     color: $white-FF;
                     font-size: 14px;
                     text-decoration: none;
