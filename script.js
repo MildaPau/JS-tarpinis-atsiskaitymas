@@ -4,13 +4,16 @@
 var burger = document.getElementById("burger");
 var anchors = document.querySelectorAll(".nav-a");
 var aHovers = document.querySelectorAll(".nav-a-hover");
+var navLogo = document.querySelector(".nav-log");
+var navLogoImg = document.querySelector(".nav-log-img");
 
 // anchors.style.display = "none";
 
 burger.addEventListener("click", function(){
+    // navLogo.style.display = "none";
+    // navLogoImg.style.display = "none";
     for(var x of anchors){
     x.classList.toggle("block");
-    // x.style.display = "block";
     console.log(x);
 };
     this.classList.toggle("rotateZ");

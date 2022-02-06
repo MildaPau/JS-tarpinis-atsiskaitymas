@@ -79,4 +79,12 @@
         display: none;
     }
 }
+@media(min-width: 450px){
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
 }
+}
+
