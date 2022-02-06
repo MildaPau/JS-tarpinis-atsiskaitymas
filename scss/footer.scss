@@ -9,7 +9,8 @@ footer{
 
         .socials-icons{
             @include icons;
-            a{
+            list-style-type: none;
+            li{
                 img{
                     height: 20px;
                     opacity: 1 !important;
@@ -29,3 +30,38 @@ footer{
         }
     }
 }
+
+// @media(max-width: 1150px){
+//     footer{
+//         .container{
+//            max-width: 850px;
+//             .socials-icons{
+//                 width: 400px;
+//                 cursor: pointer;
+//             }
+//         }
+//     }
+// }
+// @media(max-width: 900px){
+//     footer{
+//         .container{
+//             flex-direction: column;
+//             padding: 50px;
+//             .copy-right{
+//                 p{
+//                     font-size: 12px;
+//                     margin-top: 20px;
+//                 }
+//             }
+//         }
+//     }
+// }
+// @media(max-width: 450px){
+//     footer{
+//         .container{
+//             .socials-icons{
+//                 width: 300px;
+//             }
+//         }
+//     }
+// }

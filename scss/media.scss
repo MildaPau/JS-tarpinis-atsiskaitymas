@@ -208,13 +208,49 @@
 
 
 // contact-us
-@media (max-width: 500px){
+@media (max-width: 550px){
     #contact-us{
         .container{
             padding-left: 30px;
             padding-right: 30px;
             form{
                 max-width: 200px;
+            }
+        }
+    }
+}
+
+// footer
+@media(max-width: 1150px){
+    footer{
+        .container{
+           max-width: 850px;
+            .socials-icons{
+                width: 400px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+@media(max-width: 900px){
+    footer{
+        .container{
+            flex-direction: column;
+            padding: 50px;
+            .copy-right{
+                p{
+                    font-size: 12px;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 450px){
+    footer{
+        .container{
+            .socials-icons{
+                width: 300px;
             }
         }
     }
