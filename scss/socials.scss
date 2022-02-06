@@ -26,13 +26,21 @@
             @include icons;
             list-style-type: none;
             li{
-                    img{
+                transition: 0.5s;
+                img{
                     height: 30px;
                 }
                 
-            &:last-of-type{
-                @include wifi-icon;
-            }
+                &:last-of-type{
+                    @include wifi-icon;
+                    transition: 0.5s;
+                    &:hover{
+                        transform: rotate(45deg) scale(1.2);
+                    }
+                }
+                &:hover{
+                    transform: scale(1.2);
+                }
             }
         }
     }

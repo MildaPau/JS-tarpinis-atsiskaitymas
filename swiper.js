@@ -57,13 +57,13 @@ const swiper = new Swiper('#costumers-saying .swiper', {
 
   breakpoints: {
       
-      1100: {
+      1024: {
         slidesPerView: 3,
         slidesPerGroup: 3,
         allowSlideNext: false,
         allowSlidePrev: false,
       },
-      900: {
+      768: {
         slidesPerView: 2,
         slidesPerGroup: 1,
         allowSlideNext: true,
